@@ -1,0 +1,13 @@
+BorderPane {
+  -fx-min-height: 400px;
+  -fx-pref-height: 400px;
+  -fx-min-width: 500px;
+  -fx-pref-width: 500px;
+  -fx-background-color: #4bc9cd;
+  -fx-padding: 10px;
+}
+
+Text#currentCount {
+  -fx-font-size: 24pt;
+
+}

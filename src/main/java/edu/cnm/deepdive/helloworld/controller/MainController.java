@@ -13,13 +13,24 @@ public class MainController {
 
   @FXML
 void initialize() {
-  currentCount.setText(String.valueOf(counter));
-}
+    updateCounterDisplay(false);
+  }
 
   @FXML
   void update(ActionEvent actionEvent) {
     counter++;
+    updateCounterDisplay(true);
+  }
+
+  @FXML
+  void reset(ActionEvent actionEvent) {
+    counter = 0;
+    updateCounterDisplay(false);
+  }
+
+  private void updateCounterDisplay(boolean value) {
     currentCount.setText(String.valueOf(counter));
+    currentCount.setVisible(value);
   }
 
 }

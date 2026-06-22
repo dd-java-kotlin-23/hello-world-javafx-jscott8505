@@ -10,7 +10,7 @@
 <BorderPane xmlns="http://javafx.com/javafx"
   xmlns:fx="http://javafx.com/fxml"
   fx:controller="edu.cnm.deepdive.helloworld.controller.MainController"
-  prefHeight="400.0" prefWidth="600.0">
+  stylesheets="@../styles/styles.css">
 
   <top>
     <Text>This is an example of a text widget.</Text>
@@ -21,7 +21,19 @@
   </center>
 
   <bottom>
-    <Button onAction="#update">Update</Button>
+    <HBox>
+
+      <Button
+        onAction="#update"
+        text="Update"/>
+      <Region
+        HBox.hgrow="ALWAYS"/>
+
+      <Button
+        onAction="#reset"
+        text="Reset"/>
+
+    </HBox>
   </bottom>
 
 </BorderPane>
